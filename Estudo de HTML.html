@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> HTML </title>
+
+	</head>
+
+	<body>
+
+		<h1>HTML E FORMATAÇÃO</h1>
+		<hr>
+
+		<p> A página principal de um site deve conter o nome  "index.html" para ser carregado antes de qualquer outro endereço dentro de um servidor de hospedagem </p>
+		<hr>
+
+		<p> Dentro da TAG "body" podemos atribuir o "background" dentro da TAG e selecionar uma imagem como fundo do projeto </p>
+		<hr>
+
+
+		<h1> Título 1 </h1>
+		<h2> Título 2 </h2>
+		<h3> Título 3 </h3>
+		<h4> Título 4 </h4>
+		<h5> Título 5 </h5>
+		<h6> Título 6 </h6>
+		<hr>
+
+		<p> A TAG "br" é para quebra de Linha </p>
+		<hr>
+
+		<p> A TAG "p" de Parágrafo </p>
+
+		<hr>
+
+		<p> A Tag "hr" é para adicionar uma linha que separa os textos </p>
+		<hr>
+
+		<strong> Este é um texto negrito feito com a TAG "strong" pois a TAG "b" não é mais uma recomendação para deixar em negrito </strong>
+		<hr>
+
+		<em> Este texto é itálico feito com a TAG "em" pois a TAG "i" não é mais recomendada </em>
+		<hr>
+
+		<u> Este é um texto sublinhado usando a TAG "u" ou underline </u>
+		<hr>
+
+		<strike> Este é um texto marcado como errado com a TAG "strike" </strike>
+		<hr>
+
+		<p> TRABALHANDO COM LISTA </p>
+
+		<p> A TAG "ul" significa "listas não ordenadas" que contém marcadores </p>
+
+		<p> A TAG "li" significa "listas ordenadas"</p>
+
+		<p> A TAG "li" fica dentro da TAG "ul" </p>
+
+		<p> Dentro "UL" podemos escolher o marcador como "circle", "square", "disc" </p>
+
+		<ul type="circle">
+			<li> Item 1 </li>
+			<li> Item 2 </li>
+			<li> Item 3 </li>
+		</ul>
+		<hr>
+
+		<p> A TAG "ol" significa "listas ordenadas" que contém numeradores </p>
+
+		<p> Dentro "OL" podemos escolher o numerador como "1", "A", "a", "I", "i" </p>
+
+		<ol type="1">
+			<li> Item 1 </li>
+			<li> Item 2 </li>
+			<li> Item 3 </li>
+		</ol>
+		<hr>
+
+		<p> Trabalhando como IMAGENS com a TAG "img" </p>
+
+		<img src="Imagens/Ferrari.jpg" width="500">
+
+		<p> "width" define largura em pixels </p>
+		<p> "heigth" define altura em pixels </p>
+		<p> "align" define o posicionamento </p>
+
+		<hr>
+
+		<p> Trabalhando como LINKS com a TAG "a" + href="" dentro desta TAG  </p>
+
+		<a href="https://google.com.br"> Site do Google </a>
+		<hr>
+
+		<p> Trabalhando com TABELAS com a TAG "table" </p>
+
+		<p>"table" cria a tabela</p>
+		<p>"tr" cria as linhas da tabela</p>
+		<p>"td" define as colunas da tabela</p>
+		<p>"th" define o cabeçalho de uma tabela</p>
+
+		<table border="5">
+			<tr>
+				<th>Código</th>
+				<th>Produto</th>
+				<th>Produto</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Notebook</td>
+				<td>1000</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Tablet</td>
+				<td>500</td>
+			</tr>
+		</table>
+
+		<p>"border" define a borda em pixels</p>
+		<p>"width" define a largura em pixels ou em porcentagem da tela do usuário</p>
+		<p>"heigth" define a altura em pixels ou em porcentagem da tela do usuário</p>
+		<p>dentro das tabelas você pode colocar imagens e links</p>
+		<p>colspan="" permite agrupar as colunas de uma tabela com valor de 1 ou 2 e etc ... </p>
+		<p>rowspan="" permite agrupar as linhas de uma tabela com valor de 1 ou 2 e etc ... </p>
+		<hr>
+
+		<p> Trabalhando com FORMULÁRIOS com a TAG "form" </p>
+
+		<p> "input" tipo do componente </p>
+		<p> "type" define o tipo da informação ( "text", "password", "button", "submit", "radio", "checkbox", ) </p>
+		<p> "name" define o nome do componente para recuperar os dados digitados pelo usuários ( "login", "senha", ) </p>
+		<p> "value" define o texto de um botão</p>
+		<p> "submit" se usa para enviar dados </p>
+
+		<h2> Login </h2>
+		<form>
+			Login:<br>
+			<input type="text" name="login"><br>
+			Senha:<br>
+			<input type="password" name="senha"><br>
+			<br>
+			<input type="submit" name="Logar">
+		</form>
+
+		<h2> Cadastre-se </h2>
+
+		<form>
+			Login:<br>
+			<input type="text" name="login"><br><br>
+
+			Sexo:<br>
+			<input type="radio" name="sexo" value="M"> Masculino <br>
+			<input type="radio" name="sexo" value="F"> Feminino <br><br>
+
+			Interesses:<br>
+			<input type="checkbox" name="interesses" value="Futebol">Futebol<br>
+			<input type="checkbox" name="interesses" value="Cursos">Cursos<br>
+			<input type="checkbox" name="interesses" value="Moda">Moda<br><br>
+
+			Estado:<br>
+			<select name="estado">
+				<option value="sp">SP</option>
+				<option value="mg">MG</option>
+				<option value="rj">RJ</option>
+				<option value="es">ES</option>
+			</select><br><br>
+
+			Observações:<br>
+			<textarea name="obs"></textarea><br><br>
+
+			<input type="submit" value="Cadastrar">
+
+		</form>
+
+		<p> Trabalhando com CARACTERES ESPECIAIS </p>
+
+		<p> Procurar no W3Schools sobre "Entities" para usar caracteres especiais </p>
+
+	</body>
+
+</html>
